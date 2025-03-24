@@ -4,10 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind CSS</title>
+  <script src="https://kit.fontawesome.com/4d67fdbf91.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="tailwind.css">
 </head>
-<body>
-  <h2 class=" text-center bg-secoundary">Wellcome To Tailwind CSS</h2>
-  <h2 class=" text-center bg-primary font-primary">Wellcome To Tailwind CSS</h2>
+<body class=" font-primary">
+  <!--Header Section Start-->
+    <header class=" bg-secoundary pt-5">
+      <!--Navber Start-->
+        <nav id="navBer" class="sticky left-0 top-0 bg-secoundary  ">
+            <div class=" container mx-auto px-3 flex items-center justify-between ">
+              <a href="#">
+                <img class=" w-[136px]" src="img/Logo.png" alt="">
+              </a>
+                <ul id="list_items" class=" hidden md:flex md:flex-row flex-col items-center justify-center py-5 md:space-x-6  absolute md:relative left-0 top-full w-full md:w-auto px-3 md:px-0 bg-secoundary md:bg-transparent ">
+                  <li><a class=" font-bold text-lg hover:text-primary transition" href="#">About</a></li>
+                  <li><a class=" font-bold text-lg hover:text-primary transition" href="#">Services</a></li>
+                  <li><a class=" font-bold text-lg hover:text-primary transition" href="#">Portfolio</a></li>
+                  <li><a class=" font-bold text-lg hover:text-primary transition" href="#">Blog</a></li>
+                </ul>
+                <button class=" bg-black text-white font-bold text-base px-6 py-2 hidden md:block">Let’s Talk</button>
+                <button onclick="toggleItems()" class=" text-lg md:hidden"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+        <!--Nav Ber End-->
+        <!--Hero Section Start-->
+        <section class="container px-3 mx-auto grid grid-cols-12 items-center mt-16 space-y-16 md:space-y-0">
+            <div class=" space-y-4 col-span-12 md:col-span-5 ">
+                <h4 class=" text-[#1F1F1F] font-normal text-xl">UX Designer</h4>
+                <h2 class=" font-bold  text-5xl leading-[150%]">Hi There, I’m <br>
+                  <span class=" text-primary">John Smith</span></h2>
+                <p class=" text-base font-normal leading-[150%]">Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.</p>
+                <div>
+                  <button class=" bg-black text-white font-bold text-base px-8 py-2">Hire Me</button>
+                  <button class=" hover:bg-black hover:text-white font-bold text-base px-8 py-2 border border-black transition">Hire Me</button>
+                </div>
+            </div>
+            <div class=" col-span-12 md:col-span-7">
+              <img class=" w-full" src="img/hero-image.png" alt="">
+            </div>
+        </section>
+    </header>
+  <!--Header Section End-->
+  <!--About Me Section Start-->
+  <section class=" px-3 text-center bg-black py-14 text-white space-y-8">
+    <div class=" max-w-[810px] mx-auto">
+        <h2 class=" font-bold text-4xl leading-[150%] mb-4">About Me</h2>
+        <p class=" font-normal text-base ">I'm John Smith, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design, I transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
+    </div>
+    <div class=" max-w-5xl mx-auto grid md:grid-cols-3 grid-cols-1 space-y-5 md:space-y-0">
+        <div>
+          <h2 class=" text-6xl leading-[150%] font-bold text-[#FFD4D0]">502</h2>
+          <p class=" text-lg font-bold leading-[130%]">Projects Done</p>
+        </div>
+        <div>
+          <h2 class=" text-6xl leading-[150%] font-bold text-[#FFD4D0]">10+</h2>
+          <p class=" text-lg font-bold leading-[130%]">Years of Experience</p>
+        </div>
+        <div>
+          <h2 class=" text-6xl leading-[150%] font-bold text-[#FFD4D0]">273+</h2>
+          <p class=" text-lg font-bold leading-[130%]">Clients Served</p>
+        </div>
+    </div>
+  </section>
+  <!--About Me Section End-->
+
+    <script src="script.js"></script>
 </body>
 </html>
