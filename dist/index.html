@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind CSS</title>
   <script src="https://kit.fontawesome.com/4d67fdbf91.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="tailwind.css">
+
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class=" font-primary">
   <!--Header Section Start-->
     <header class=" bg-secoundary pt-5">
       <!--Navber Start-->
-        <nav id="navBer" class="sticky left-0 top-0 bg-secoundary  ">
+        <nav id="navBer" class="sticky left-0 top-0 bg-secoundary ">
             <div class=" container mx-auto px-3 flex items-center justify-between ">
               <a href="#">
-                <img class=" w-[136px]" src="img/Logo.png" alt="">
+                <img class=" w-[136px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAuCAYAAADz/1GhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAeNSURBVHgB7ZpdUttIEMe7JZnavLkWeExF3MCB3edVTrDeE8ScIHACnBMQThDnBIEToLxtVYD1DTCpyhOkyvuUKixptluWxGisjxmx7EJqflXGaDQ9Go9G3f/pEYDFYrFYLBaLxWKxWCwWi8VisVgslnuA+T/Pnz8f0le/oe5cCJF+vn79OjWx8TxvxnBBNNgcQQe86fWk6Xw0WKe+OE19qWQBi/DZdD6rbiOZe9Nvx21t3A76Awd6AzDob/X1yv1p4vug7/egF8hlAsSsN70JwYC2dry80HGcQ/ryQYMXL17MkiR5SzYHOjY0SQobcL+/h25Mmk4i9V+g8MEQV7i7Rdsu/xFS/xBuf918ufb5elpnzwPsuu5HGlQ/LxMIb0EDdOFQtmM84bHtuM3WA8+nzpfGEvmBHPS3cDqfgyau4wwBxaFc5oCY0Fe4/L8bPk0O7pzfwebR4p2n3iKUy5ykPHgqPdc9EIB+USDo6Tu7GUMLi8FGULLLQIQ30J3+wvFGJgYuYuP1uk6QH5ZFHJFHEfITGETb66Oquuw96JaWzgkHd0EDdMXrmlP9xS8bAXTEQfhdty7/rqpJKuPVXshx/MvLyyu5zPf9AYWJPUSs/HFXV1eolpFNQDajKhsEnLnn11vwALhJ5ONf8ytTO47/i+2NI3qSD4pCxENy3ceq615z3VMhHSO5Zu/sWwh6DGvPJMjnQuhGwBOMvFjYWrPmPsoYeRDSmdMvX76MSFMcGdiEbEP/toq9x0Lv4mZMM13WHf3E8w7kOvHOz2/U0HIbx1raY+mRUBKn4lj2Woii9cY1spxgjSy9HwRt9TqFGPIu78AQ8iDak+oxkCDsy8eks/dy15+Flj3F5K3O6iNFCQMiHRssTcj7hBmeYOTxGld0rJ1Ag04TJF+ymprBE4JdNK0wSpMaxTLsVAlT7+LbBDTIJtdQtk3DgcAPcj1HmHkRFDiTDlvFKkreQ7Et0WmCkK4wzjdAc77kUeLF8VgVrPHO+ntVmC6S+BVo0nPcQD4mrRPyt5ssSmGGJuCwzQuUwCQESbc0iVVVnJKOqg2NtSK1iTiOhxRmwJDKDmexsBFt1y0RCW+L2samOj9R3qApZ8Dnop11XpV8zMuEumpBg9CSNloWhgkuPQdf6/bl+gkNa36+H7vpZNLWbolIThx0guywXqzKfSAPtkiisOdWTwXjCULZ01GWVNMi8zavSdiO1XOcJKKOXWo0g2AIJaFOey0/L1kmhBqXpZwbiXY2QqgSdBxa4lhbj60IQw4v53erHnRxQoMiTaA0R6E9QXpJMoldPMgFMIVEtg8b+wDNSb3aEaSl6YSyn3IRX9SHhlBB9U+Voj5NjEabpwB7CRrsQC1PAI88g6xlXXjJ8aJoSl5jLq1wBhxmdDOjXG+xvf5BSrYNVXtVnFJ4DJvabIoTgfLhvYa2G93F5tGDNYLRRTATkkrWMg8vxXm6kUkCJ1KRcWaUxEfJ40SOV6y2Mk1TCGTO27SFx04aJCMEwwlA3mRCXyOpaE5P5x/wEAjcFY6YNVVZRHHj+bTOIF1ujiovQb//dntjb+3ipjXMsGsXy/HKjMvhJUcNM5nY1A5jrDnkkJh5kzH/HzvuUM6/qBO0itoJkiXDpORNKmx86fwnKuPjvlRWimfZEyOf/wTSYFMmde6dXYfwALhicYpn5plUFYc2xERZAoUgxXC6gQd0849bn0THLedNaOzoRoqViqslgUmYYRSx2s/FKmeHi+ZrJuhKv+tO0A7loZxqJ7E5pRtcqHms2OShjOlYPiYbnhRFzMt2f58M8fYGD6hfFCzzHa/oxrLWCrLSPglt3oRsXOqyJxDQjSxMjHXrV4jVA/KEIMqbq1pZX+21KuXG1J3OPrSEF7IZQzlB5sMTIQ0JuHJT0kFNnGhfKQ9oOTysa6tu51YXevJ/M6pP3oYyv3L4CGhVZyROc4ySGeQ1tGbdfW0eA7wRJx+nG3FZtnTt83yqZlmJw7rElrpzy20tetFW3Ycm4Es1QXc72ByACYpYBTlzqiFOi2bAAN54A8NdRrKZQPedyf+FlW1wIebqRhxnWWl1M7srQV/d0CvOKDkUFofP/pzP6j48AZXVDKAjaj1UFVmCLKw6pyNOc4xXMewRSFcED21zXxLshfH2Zms9gcl+9qJQCoeWkpiD9B2Po2cX5Scuy7JyqLnLsi439E7k7OUyvJR1jI44XF3NpIuEMRjBXg6DcpHe9YvrgiGZF9HO7kk2IfyH8OuHOp9ElHWUyRtilW+gCShlmVfCC+qNAyfNynszwjfd4XVj1hlCXf0YhfxOm3XkEfY72Dx6LZK9pzGSyxLXaczTqG+gca5jsb0xlqqUQoOue69Immm956G2IUT5NQtdcZpThBh+X4PS63LO4u86I97upyXsLtX3QRP2ImSzL6QnNlmd3Z2JIT5CYf5WO7jOVD6k/hUTmcQc6YGbaZM5iz3e0CO7QkSKLH+UroSUG9Q7N3jr3Ivfidib3bV7N14RRLPsBee8s5X9jJJo0nN6yzYwmVeJU960jKTfXdeWxWKxWCwWi8VisVgsFovFYrFYLBaL5d/lHwAUtIqxg0lMAAAAAElFTkSuQmCC" alt="">
               </a>
                 <ul id="list_items" class=" hidden md:flex md:flex-row flex-col items-center justify-center py-5 md:space-x-6  absolute md:relative left-0 top-full w-full md:w-auto px-3 md:px-0 bg-secoundary md:bg-transparent ">
                   <li><a class=" font-bold text-lg hover:text-primary transition" href="#">About</a></li>
@@ -40,7 +41,7 @@
                 </div>
             </div>
             <div class=" col-span-12 md:col-span-7">
-              <img class=" w-full" src="img/hero-image.png" alt="">
+              <img class=" w-full" src="./assets/hero-image-4m0IB5Gh.png" alt="">
             </div>
         </section>
     </header>
@@ -78,22 +79,22 @@
       <!-- Service Wrapper Start -->
       <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
         <div class=" text-center sm:text-left space-y-3">
-          <img class=" size-12  mx-auto md:mx-0" src="img/sIcon-3.png" alt="">
+          <img class=" size-12  mx-auto md:mx-0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA2CAYAAACBWxqaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPuSURBVHgB1VpdTttAEJ7ZdRA81RLwjDkBIZTnhhtwA9oTND1ByAkoJwicgHKCmrdKVCicAPe5VLhPlZL1Tmc2cYhoQCF4RPNJltdrez2zOz/f7hpAEX/qcULb8QYowoAiIogSUIaqAgJno01QRASKQEsxEKhCVQEgE3vwoAlVBTwUsbaV6poQmBiUodo9RJSwGqpKqI6AMfAGwau6sa4Tc++z9Is7AkiYsCOoQlUBQvEBXag5cb8e18uyJh9SU8BYm5TlwthtUIKaAkQ4HgEvvqAENQUQaeu+DE1QgmYia5YFDkTvQAkqCgzqa82QgYkyDqUZV8WDt1JXPVQUYBp9IGcCc85s9DxUetwHBVSeZmQaWbPRjZQHhduMoihBgq98mVu+xl6eQ4WofARq1rbljEAnK708q32/TflSjthHURsqRqUKuJ1VNhN8L+V+UXTKem/cJzkTQatqX6hMgaHjQlfKhNCR3i/vLV3mPU8+KMHmdNbfXa/D/wKqx3HRWGu7nTWSg3v48LFn+zvrJ+Vz8g5UgLmdWAT3JvrIhK1VTlqk59nmD596TxTkURgJTxmHqs7AF+nkiD0HMysQogvUmhjRFtuymEBz4nY6Ej6dpS0hetbYM0JMJtvgjN0jRxceTLbU+9mbpS0UwSzUYo4afGDiTRHLXNYgbRD3LCei+lRaTJQzR+g9R/CHEKfnNYt9A3gwVThghTj8smwZ86kfBD43HjOWK4RiBy4zsMyl2mA4M7D8ANhwkxv+DTKbQhZUhP2n9WA2OTqae8ZFBfL3kKn2lPbH37y/F2SzEGR1yy4T2Wc2of5uXDfeJsIyeaiF2zQnvpaxOXyYdSQkYhlLXe7JZKI6JaBrFigd1IreyrfZfGJuJw4+YWyTG2iXtszOeWivbjtPvcfR54jNrhUumCuRwdPIuc9VZ+hnQSJLGR7ZrruPPeca691Zwu2rQEyMhb8T4fqNtdbD++Nc0Vi9m5xuvhSVkjmhCSPixvQBt5cuh6FwkuCx+ezNG7WmoVIuJIKxIx6Hhj0djettNKQYgMdVCi+onE4HamHtTVjU4t52zmWh99lhOePuzZtxH0PldFqiCWfq03DhoTmm1whp1cILdObEBr8MT3iAo3zhEU9BAWoLfxKRxivTbD7R1S+VrSbNVYm0LHCiuwYlqCngiS7KMvtECkrQW1rEsJwSgAZmosZzfQeUMCiKsdDk8PV4zktQ8h5QhPYGR7bQGxwyGZIZFShCdZey8HRNw5mdGtT/lQC6j0Ya0PWBEEp1f5bQ3eTjVYSF/tVAVhEW+mcPQJ+zGS1uFJJ1H1CGsg+4HFwNNKGqQMFJbBkHqmHoL2+zphZTmA3QAAAAAElFTkSuQmCC" alt="">
           <h3 class=" text-lg font-bold leading-[130%]">Design</h3>
           <p class=" text-sm font-normal leading-[150%]">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</p>
         </div>
         <div class=" text-center sm:text-left space-y-3">
-          <img class=" size-12  mx-auto md:mx-0 " src="img/sIcon-1.png" alt="">
+          <img class=" size-12  mx-auto md:mx-0 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAA2CAYAAABDa14eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVQSURBVHgB7ZtNcts2FIAfQMqTrsrG6l45QVgpWYe9QXKCpCewegLJJ7B9giQnaHqCMvs0lU8QZZ+MuWtGJIi+xz/DqmX+PSijhN+MhhIlfoIgEHwAHgEGBgYGBga+UQT0QPuep8AJhCueaA0ToYWvReqh1is+EQkQaw0QCQErnei3DqhQrKLoW/LeRacKjv1xIBxYUJGvC9eKN6D0a3f1+c0he5vQqoKT2fFTPOBMg5gYu0MN+hL3h/FIre59wX+/+MepxcQjmMjUmWhsLdgqnuDu4PpQvQYNp1iK6JC87vvPr6AhjSr4X9+bjBz3ZfVlWkdaigs3Sc7bnj6ZS+JpCrDQQkxuvHkgXuo+Nkny7IdVtK47vraC1ez+CbaAZXZqYUFTKU6P3n06h57kXml6ohRbx9H7fm5bXiKZHr8wKrqRV971ppqOF3lhhYeVfOGk6gFL5VZebFzoTUG/xqeeFHBG70FHbHlLqGvYpOpXFi8dmMzGmh6bR+M5MLHLu5nen5f7uxTalncXvbxVYafHV/GjcQBM1Hk3jz0fL6RXbQtty1tHJy/1YVVL8D0fmGjqpQqqPjetP3NseZvSyktXzPIf4ewW2nqN0++Kjt23ty2NvWo2/idr7rPjl8BIF288Oz4vCv3Xvr1d2OWtoggKQXCI6GMott4odQpMdPW6Si1p6IpPAxrg7MvblV3eqoIxeC476dMmAXRTunppQJBqXVbc2b68XbnTSzVeXIU/ACMc3rKPNaMDW14Otr1lC35ebNm6Bi4vzglc0FZoWOzB25ttr8im8Bz3il7EKnnA1T1weQ1P5KCH9tnw9pmSvMsrleMExXshZ9/L5S1+eIgPj5y2vMDEtlfixHNAb+D2LTDC6dVaX+ZbGdjyAiOmVwohHtILIfQKGOH0YsQQ5k/0xJYXGDG9OCEE2Qx/quQaGOH0xkpllSlBPLTlBUZMr4uz+xOqjhHEa2CE03sPLxgqd2Ll0sOGlw/TK8s1Kq6r6DV8XsPh2fPyYXolDFhFFuPnLH4DVvi8hiOy5+XD9EqhZS4X8CMwwumNASa5Cta2vMCI6ZVapNkVT0nnF2CE0ysdZ5I5sUXY8gIjppcGGh+zF+zBNp+XchSK7aUtLzBiemUZFGPgzhoLcnqLBBDcpqEtLzByo7z55ITzgcIfnJz4iXfSo7+3SHrJpiXJQ1sbXq7fve2VuVhk/Voi3TkwweWlrBraYn/2JzlteYGJbW8WB2uRz6ti0z4BRji85cqFAP3KtpeDnV6FqwPcS9p9vbTutmvlwpa3D7d5q5Ectorfsx34D3AOOrp6qS8z19325e3KLm9Vwe7fWe5riA8vdV22ZZSu3pHjLCjtFIP11W3pora8XdnlvTEXgUswv9FQFGPNOWv2S0svZetgL/aCsjk3Knm2b29bWnnNpDbOFdemXkp/apN0aMvblE5eLOiyTAXaPP7ZBybqvJTqbyx7L7+2t/Z7+3iNQnMny93qNZP4ulSCLe8umnpFXaGr9X2M6yhFiWPleduLIQFO4kBWKRTjjt59WkIHbHlNKGJJpbto6hV1QurjcMJika8ktL8JpJk3J8XQq28GvS0v0eV2itoKJijGO3LcP7Jku4y8ouNUtc5NKFrAiRZ6Dv+7pepgvCFFMCw3wZhs3QRSElKOgkj1KgW5psVI87aoLxinjsDxi5v/6A8KrkuPP5wGDBq8Q/IWMXgjWlVwSZGe+RwPfwptwVMLB+yrou8KD9nbhE4VXH13PiUZYNcRiCJnQWtcrhfFqaTp1lSZrULgZz7SzX+OanjL6wF5BwYGBgYGvkv+A3uoHZNat4DPAAAAAElFTkSuQmCC" alt="">
           <h3 class=" text-lg font-bold leading-[130%]">Branding</h3>
           <p class=" text-sm font-normal leading-[150%]">I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.</p>
         </div>
         <div class=" text-center sm:text-left space-y-3">
-          <img class=" size-12  mx-auto md:mx-0" src="img/sIcon-4.svg" alt="">
+          <img class=" size-12  mx-auto md:mx-0" src="data:image/svg+xml,%3csvg%20width='54'%20height='54'%20viewBox='0%200%2054%2054'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M31.5004%2011.2504H45.0004'%20stroke='%23FC3314'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M31.5004%2018.0004H38.2504'%20stroke='%23FC3314'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M47.2504%2025.8754C47.2504%2037.6879%2037.6879%2047.2504%2025.8754%2047.2504C14.0629%2047.2504%204.50043%2037.6879%204.50043%2025.8754C4.50043%2014.0629%2014.0629%204.50037%2025.8754%204.50037'%20stroke='%23FC3314'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M49.5004%2049.5004L45.0004%2045.0004'%20stroke='%23FC3314'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
           <h3 class=" text-lg font-bold leading-[130%]">UX Research</h3>
           <p class=" text-sm font-normal leading-[150%]">"I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.</p>
         </div>
         <div class=" text-center sm:text-left space-y-3">
-          <img class=" size-12 mx-auto md:mx-0" src="img/sIcon-2.png" alt="">
+          <img class=" size-12 mx-auto md:mx-0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFQSURBVHgB7ddPToNAFAbw96BtdIdpD4A3QLtxaW/gEbyJZ/AEHqUnMMETiGtjwq4mZXjOoPiH2MCUzkCT77dhphnafpkh+SACAACA0WHqYZNE8SwM16LHk8e3cxqRgPb0E4pjEhqdvYL9DSXZtlQrGhnro/hfqNM0z3atlySKFE1vyLGSKJ2lr2k9bw2mlvNnc9K26nNXbEIZxXKx1pdr8iBUxRmneW7Gk9bVJhVzPNWBuJpy51BfX3Cv7+uwrp+S+aUOZbTuWHX0Ar1LOlz1gVWo4XR6xr7D6fExhAIAgCa0+ya0+4E4b/f1PeTYCVFu1RX7t/v5g/6ZW3JOslCpC2/tvhR5CiloXdeXMGVo9zW0ewCAY4d234R2PxAv7X4Iztu9ulzceWn3LHmgipW3di8sib7E5Jr+T7+nXtr95srDi+a75YumgXYPAAAAB/EBfIIx0Kg38OwAAAAASUVORK5CYII=" alt="">
           <h3 class=" text-lg font-bold leading-[130%]">Usability Testing</h3>
           <p class=" text-sm font-normal leading-[150%]">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</p>
         </div>
@@ -116,7 +117,7 @@
     <div class="container mx-auto px-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-6 gap-12 -mt-20">
         <!-- Portfullio -->
         <div class=" space-y-6">
-          <img class=" w-full" src="img/portfullio-1.png" alt="">
+          <img class=" w-full" src="./assets/portfullio-1-18k4R4uO.png" alt="">
           <div class=" flex items-end justify-between">
             <div class=" space-y-2">
               <h2 class=" text-xl font-bold leading-[150%]">Educational Platform</h2>
@@ -131,7 +132,7 @@
 
         <!-- Portfullio -->
         <div class=" space-y-6">
-          <img class=" w-full" src="img/portfullio-2.png" alt="">
+          <img class=" w-full" src="./assets/portfullio-2-z6AC1Gx0.png" alt="">
           <div class=" flex items-end justify-between">
             <div class=" space-y-2">
               <h2 class=" text-xl font-bold leading-[150%]">Travel App Design</h2>
@@ -146,7 +147,7 @@
 
         <!-- Portfullio -->
         <div class=" space-y-6">
-          <img class=" w-full" src="img/portfullio-3.png" alt="">
+          <img class=" w-full" src="./assets/portfullio-3-L95cA8MS.png" alt="">
           <div class=" flex items-end justify-between">
             <div class=" space-y-2">
               <h2 class=" text-xl font-bold leading-[150%]">Personal Page</h2>
@@ -161,7 +162,7 @@
 
         <!-- Portfullio -->
         <div class=" space-y-6">
-          <img class=" w-full" src="img/portfullio-4.png" alt="">
+          <img class=" w-full" src="./assets/portfullio-4-W8mKW72e.png" alt="">
           <div class=" flex items-end justify-between">
             <div class=" space-y-2">
               <h2 class=" text-xl font-bold leading-[150%]">Furniture Mobile App</h2>
@@ -176,7 +177,7 @@
 
         <!-- Portfullio -->
         <div class=" space-y-6">
-          <img class=" w-full" src="img/portfullio-5.png" alt="">
+          <img class=" w-full" src="./assets/portfullio-5-u6NXsndx.png" alt="">
           <div class=" flex items-end justify-between">
             <div class=" space-y-2">
               <h2 class=" text-xl font-bold leading-[150%]">Coffee House Landing Page</h2>
@@ -191,7 +192,7 @@
 
         <!-- Portfullio -->
         <div class=" space-y-6">
-          <img class=" w-full" src="img/portfullio-3.png" alt="">
+          <img class=" w-full" src="./assets/portfullio-3-L95cA8MS.png" alt="">
           <div class=" flex items-end justify-between">
             <div class=" space-y-2">
               <h2 class=" text-xl font-bold leading-[150%]">Personal Page</h2>
@@ -291,7 +292,7 @@
       <h2 class=" text-4xl font-bold leading-[150%] text-center">Testemonials</h2>
       <p class=" text-base font-normal leading-[150%] text-[#1F1F1F] text-center">Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
       <div class=" flex items-center justify-center space-x-4">
-        <img class=" size-16" src="img/testimonial-user-1.png" alt="">
+        <img class=" size-16" src="./assets/testimonial-user-1-ubD6JSmo.png" alt="">
         <p><b>John Smith</b> / CEO of XYZ Company</p>
       </div>
     </div>
@@ -308,7 +309,7 @@
       <div class=" grid grid-cols-1 md:grid-cols-3 gap-14 ">
         <!-- card -->
         <div class=" space-y-6 bg-white">
-          <img class=" w-full" src="img/Insights-2.png" alt="">
+          <img class=" w-full" src="./assets/Insights-2-GVaRSPoQ.png" alt="">
           <div class=" space-y-2 p-4">
             <h6 class=" text-xs leading-[150%]">August 15, 2023 / UX</h6>
             <h3 class=" text-base leading-[130%] font-bold">Color Psychology in UX</h3>
@@ -318,7 +319,7 @@
         </div>
         <!-- card -->
         <div class=" space-y-6 bg-white">
-          <img class=" w-full" src="img/Insights-3.png" alt="">
+          <img class=" w-full" src="./assets/Insights-3-Z2xoy8TW.png" alt="">
           <div class=" space-y-2 p-4">
             <h6 class=" text-xs leading-[150%]">August 15, 2023 / UX</h6>
             <h3 class=" text-base leading-[130%] font-bold">Boosting UX with Microinteractions</h3>
@@ -328,7 +329,7 @@
         </div>
         <!-- card -->
         <div class=" space-y-6 bg-white">
-          <img class=" w-full" src="img/Insights-1.png" alt="">
+          <img class=" w-full" src="./assets/Insights-1-ep3h1BLi.png" alt="">
           <div class=" space-y-2 p-4">
             <h6 class=" text-xs leading-[150%]">August 15, 2023 / UX</h6>
             <h3 class=" text-base leading-[130%] font-bold">Typography Tips for Design Success</h3>
@@ -398,7 +399,7 @@
                 <li><a class=" text-xl font-bold leading-[150%] hover:text-primary transition" href="#">About</a></li>
                 <li><a class=" text-xl font-bold leading-[150%] hover:text-primary transition" href="#">Services</a></li>
               </ul>
-              <a href="#"> <img class=" w-40" src="img/footer-logo.png" alt=""></a>
+              <a href="#"> <img class=" w-40" src="data:image/png;base64,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" alt=""></a>
               <ul class=" flex space-x-10">
                 <li><a class=" text-xl font-bold leading-[150%] hover:text-primary transition" href="#">Portfolio</a></li>
                 <li><a class=" text-xl font-bold leading-[150%] hover:text-primary transition" href="#">Blog</a></li>
@@ -417,6 +418,6 @@
    </footer>
   <!-- Footer End -->
 
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
